@@ -1,0 +1,231 @@
+$cGreen: #00A884
+$cRed: #ED1958
+    
++font(Stolzl, Stolzl-Light, 300)
++font(Stolzl, Stolzl-Regular, normal)
++font(Trash, TrashBoldItalic, normal)
++font(icomoon, icomoon, normal)
+
+=trash
+    font-family: Trash
+=stolzl
+    font-family: Stolzl
+
+=f160
+    font-size: 160px
+    line-height: 180px
+    +trash
+    text-transform: uppercase
+    +r(1259)
+        font-size: 130px
+        line-height: 142px
+    +r(991)
+        font-size: 100px
+        line-height: 120px
+    +r(767)
+        font-size: 50px
+        line-height: 62px
+
+=f80
+    font-size: 80px
+    line-height: 90px
+    +trash
+    text-transform: uppercase
+    +r(1259)
+        font-size: 64px
+        line-height: 72px
+    +r(991)
+        font-size: 48px
+        line-height: 54px
+    +r(767)
+        font-size: 32px
+        line-height: 44px
+
+=f54
+    font-size: 54px
+    line-height: 65px
+    +stolzl
+    +r(1259)
+        font-size: 43px
+        line-height: 52px
+    +r(991)
+        font-size: 32px
+        line-height: 40px
+    +r(767)
+        font-size: 24px
+        line-height: 32px
+
+=f36
+    font-size: 36px
+    line-height: 44px
+    +trash
+    text-transform: uppercase
+    +r(1259)
+        font-size: 22px
+        line-height: 26px
+
+=f28
+    font-size: 28px
+    line-height: 36px
+    +stolzl
+    +r(1259)
+        font-size: 22px
+        line-height: 32px
+    +r(767)
+        font-size: 18px
+        line-height: 24px
+
+=f23
+    font-size: 23px
+    line-height: 28px
+    +stolzl
+    font-weight: 300
+    +r(1259)
+        font-size: 18px
+        line-height: 24px
+    +r(767)
+        font-size: 14px
+        line-height: 18px
+
+=f18
+    font-size: 18px
+    line-height: 24px
+    +stolzl
+    +r(1259)
+        font-size: 14px
+        line-height: 18px
+    +r(767)
+        font-size: 8px
+        line-height: 16px
+
+=f16
+    font-size: 16px
+    line-height: 26px
+    +stolzl
+    +r(1259)
+        font-size: 14px
+        line-height: 20px
+    +r(991)
+        font-size: 12px
+        line-height: 20px
+
+=f14
+    font-size: 14px
+    line-height: 20px
+    +stolzl
+    +r(1259)
+        font-size: 12px
+        line-height: 18px
+    +r(991)
+        font-size: 10px
+        line-height: 16px
+    
+
+
+
+
+
+
+// headers font
+h1, .h1
+    +f54
+h2
+    +f28
+
+
+//title blocks
+.h2
+    +f160
+.h2-outline
+    +f160
+    color: transparent
+    -webkit-text-stroke-width: 0.5px
+    -webkit-text-stroke-color: #fff
+    &-sm
+        +f80
+
+.h2-multiple
+    line-height: 0.8
+    padding-top: 25px
+    // opacity: 0.5;
+    .h2-outline
+        display: block;
+        text-align: right;
+        padding-right: 14%;
+
+//content wrapper
+.content
+    h1
+    h2
+        margin-bottom: 27px;
+        font-weight: normal
+
+
+
+    p, .p
+        +f16
+        font-weight: 300
+        margin-bottom: 22px
+
+    ul, ol
+        margin-bottom: 22px
+        li
+            margin-bottom: 17px
+            +f16
+            font-weight: 300
+            &:before
+                content: ''
+                width: 7px
+                height: 7px
+                border-radius: 50%
+                background: $cRed
+                display: inline-block
+                margin-right: 15px
+    ol
+        list-style-type: decimal !important;
+        padding-left: 20px
+        li:before
+            content: none
+        
+// icons font
+[class^="icon-"], [class*=" icon-"]
+    font-family: 'icomoon' !important
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+.icon-arrow:before
+    content: "\e900"
+
+.icon-cart:before
+    content: "\e901"
+
+.icon-fb:before
+    content: "\e902"
+
+.icon-insta:before
+    content: "\e903"
+
+.icon-odn:before
+    content: "\e905"
+
+.icon-vk:before
+    content: "\e906"
+
+.icon-youtube:before
+    content: "\e907"
+
+.icon-like:before
+    content: "\e904"
+
+.icon-android:before
+    content: "\e908"
+
+.icon-apple:before
+    content: "\e909"

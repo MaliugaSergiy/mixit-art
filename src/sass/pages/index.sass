@@ -1,0 +1,697 @@
+.main
+    &-hero
+        margin-bottom: 49px
+        &-head
+            &-fuck
+                margin-top: -4px
+                position: relative
+                &:before
+                    content: ''
+                    width: 130px
+                    height: 130px
+                    display: inline-block
+                    position: absolute
+                    left: 151px
+                    top: 8px
+                    background: url('../img/elements/hero-star.svg') center / contain no-repeat
+            &-makeup
+                margin-top: -38px
+            &-standards
+                margin-left: -11.9%
+                margin-top: -44px
+        &-nav
+            &-list
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
+                &-item
+                    color: $cRed
+                    text-decoration: none
+                    +f23
+                    font-weight: 300
+                    padding: 15px 5px
+                    transition: color .2s ease
+                    &:hover
+                        color: #ffffff
+        &-bottom
+            padding-top: 20px
+            &-first
+                max-width: 146px
+                margin-top: -474px
+                video
+                    max-width: 100%
+                    width: 100%
+            &-middle
+                z-index: 1
+                position: relative
+                &__image
+                    max-width: 340px
+                    margin-bottom: 65px
+                    img
+                        max-width: 100%
+                &__text
+                    +f23
+
+            &-last
+                margin-top: -404px
+                .fly-circle:after
+                    right: 78%
+                    bottom: 177px
+                    width: 567px
+                    height: 567px
+    &-product
+        padding-bottom: 50px
+        padding-top: 40px
+        &-title
+            text-align: center
+        &-content
+            margin-top: -17px
+        &-list
+            padding-top: 50px
+            padding-bottom: 30px
+            &-item
+                display: block
+                min-height: 440px
+                background: #FFFFFF
+                border-radius: 1px
+                margin-bottom: 20px
+                padding: 7px 28px 40px
+                &:hover
+                    .main-product-list-item__image
+                        transform: scale(1.1)
+                a
+                    text-decoration: none
+                &--black
+                    background: #000000
+                    color: #ffffff
+                    .main-product-list-item__title
+                        color: #ffffff
+                    .main-product-list-item__subname
+                        color: #666666
+                    .main-product-list-item-controls
+                        .btn
+                            border: 1px solid #505050
+                            color: #fff
+                            &:hover
+                                color: #000000
+                                background: #ffffff
+                                border: 1px solid #ffffff
+                &--yellow
+                    background: #F3D360
+                    .main-product-list-item__subname
+                        color: #95813b
+                    .main-product-list-item-controls
+                        .btn
+                            border: 1px solid #98843C
+                            color: #000000
+                            &:hover
+                                color: #000000
+                                background: #ffffff
+                                border: 1px solid #ffffff
+                &__image
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 16px;
+                    margin-bottom: 24px
+                    min-height: 280px
+                    transition: transform .2s ease
+
+                    img
+                        max-width: 100%
+                        max-height: 100%
+                &__subname
+                    color: #CECECE
+                    +f14
+                    font-weight: 300
+                    margin-bottom: 11px
+                &__title
+                    +f23
+                    font-weight: 300
+                    margin-bottom: 17px;
+                    color: #000000
+                    display: block;
+            .row
+                .col-lg-3
+                    &:nth-child(even)
+                        .main-product-list-item
+                            margin-top: -50px
+        &-nav
+            margin-bottom: 51px
+            &-list
+                display: flex
+                justify-content: space-around
+                width: 100%
+                position: relative
+                &.menuUse
+                    .main-product-nav-list-category
+                        display: none
+                        &.open
+                            display: flex
+                    .main-product-nav-list-cancel
+                        display: block
+                        color: $cRed
+                        transition: color .2s ease
+                        &:hover
+                            color: #ffffff
+
+                &-cancel
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: none
+                    left: -20px;
+                    padding: 20px;
+                    cursor: pointer
+                &-category
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    margin: 0 50px;
+                    &-item
+                        +f23
+                        font-weight: 300
+                        position: relative
+                        padding: 22px 0
+                        text-decoration: none
+                        display: block
+                        color: #ffffff
+                        transition: color .2s ease
+                        &:hover
+                            color: #ec1958
+                    &-droplist
+                        display: none
+                        li a
+                            text-decoration: none
+                            color: #ffffff
+                            +f23
+                            font-weight: 30
+                            margin: 0 10px
+                            padding: 10px 0
+                            display: inline-block
+                            position: relative
+                            transition: color .2s ease
+                            &:after
+                                content: ''
+                                width: 0%
+                                height: 3px
+                                background: transparent
+                                position: absolute
+                                left: 50%
+                                bottom: 0
+                                transition: all .4s ease
+                            &:hover
+                                color: #ec1958
+                            &.active
+                                color: #ffffff
+                                &:after
+                                    width: 100%
+                                    background: #EC1958
+                                    left: 0
+                                    bottom: 0
+
+                    &.open
+                        .main-product-nav-list-category-droplist
+                            display: flex
+                        .main-product-nav-list-category-item
+                            cursor: default !important
+                            color: #ffffff !important
+                            margin-right: 18px
+                            span
+                                &:after
+                                    content: ':'
+    &-visagiste
+        &-head
+            padding: 45px 0 0
+            position: relative
+            margin-bottom: 4px
+            .h2
+                position: relative
+                display: block
+                &:before
+                    content: ''
+                    display: block
+                    background: url('../img/elements/visage-star-1.svg') center / contain no-repeat
+                    left: -13px
+                    top: -79%
+                    position: absolute
+                    width: 91px
+                    height: 91px
+                &:after
+                    content: ''
+                    display: block
+                    background: url('../img/elements/visage-star-2.svg') center / contain no-repeat
+                    right: 0%
+                    bottom: 9%
+                    position: absolute
+                    width: 57px
+                    height: 57px
+        &-stories
+            margin-bottom: 153px
+            &-list
+                display: flex
+                &-item
+                    user-select: none !important
+                    display: inline-block
+                    color: #ffffff
+                    text-decoration: none
+                    margin-left: 76px
+                    &:first-child
+                        margin-left: 0
+                    &:hover
+                        .main-visagiste-stories-list-item__photo img
+                            transform: scale(1.05)
+                    &__photo
+                        max-width: 168px
+                        min-width: 168px
+                        width: 168px
+                        height: 168px
+                        padding: 11px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        border-radius: 50%
+                        overflow: hidden
+                        border: 2px solid #D5D5D5
+                        margin-bottom: 17px
+                        user-select: none !important
+                        img
+                            max-width: 100%
+                            max-height: 100%
+                            width: auto
+                            height: auto
+                            border-radius: 50%
+                            transition: transform .3s ease
+                            user-select: none !important
+                    &__name
+                        width: 100%
+                        +f18
+                        font-weight: 300
+                        padding-left: 14px
+        &-girls
+            margin-bottom: 72px
+            &-item
+                position: relative
+                text-decoration: none
+                z-index: 2
+                &__photo
+                    position: relative
+                    display: block
+                    z-index: 1
+                    img, video
+                        max-width: 100%
+                        position: relative
+                        z-index: -1
+                &-content
+                    display: block
+                    color: #ffffff
+                    text-decoration: none
+                    z-index: 2
+                    position: relative
+                &-avatar
+                    width: 105px
+                    height: 105px
+                    min-width: 105px
+                    overflow: hidden
+                    border-radius: 50%
+                    display: inline-block
+                    margin-bottom: 20px
+                    img
+                        max-width: 100%
+                &-name
+                    +f80
+                    word-break: break-word
+                    margin-bottom: 30px
+                &-description
+                    +f28
+                &--rightWide
+                    margin-top: -12%
+                    z-index: 1
+                    margin-bottom: 50px
+                    .main-visagiste-girls-item__photo
+                        margin-left: -17%
+                &--last
+                    margin-top: 58px
+                    .main-visagiste-girls-item__photo
+                        position: relative
+                        &:before
+                            content: ''
+                            position: absolute
+                            top: -2%
+                            left: -36%
+                            width: 888px
+                            height: 82px
+                            display: block
+                            background: url('../img/elements/photo-wave.svg') center / contain no-repeat
+    &-bundle
+        padding-top: 50px
+        &-title
+        &-content
+            position: relative
+            overflow: hidden
+            margin-top: -11px
+        &-list
+            margin-bottom: 114px
+            &-item
+                display: block
+                min-height: 778px
+                background: #FFFFFF
+                color: #000000
+                border-radius: 1px
+                margin-bottom: 20px
+                padding: 39px 54px 28px
+                position: relative
+                a
+                    text-decoration: none
+                &-element
+                    position: absolute
+                    width: 137px
+                    height: 99px
+                    display: block
+                    background: url('../img/elements/hot.svg')
+                    right: -47px
+                    top: 97px
+                    pointer-events: none
+
+                &--black
+                    background: #000000
+                    color: #ffffff
+                    .main-bundle-list-item__description, .main-bundle-list-item__title
+                        color: #ffffff
+                    .main-bundle-list-item__advantages ul li:before
+                        background: #ffffff
+                    .main-product-list-item-controls
+                        .btn
+                            border: 1px solid #505050
+                            color: #fff
+                            &:hover
+                                color: #000000
+                                background: #ffffff
+                                border: 1px solid #ffffff
+                &--green
+                    background: $cGreen
+                    color: #ffffff
+                    .main-bundle-list-item__description, .main-bundle-list-item__title
+                        color: #ffffff
+                    .main-bundle-list-item__advantages ul li:before
+                        background: #ffffff
+                    .main-product-list-item-controls
+                        .btn
+                            border: 1px solid #7FD3C1
+                            color: #fff
+                            &:hover
+                                color: #000000
+                                background: #ffffff
+                                border: 1px solid #ffffff
+                &__image
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-bottom: 17px
+                    min-height: 288px
+                    img
+                        max-width: 100%
+                        max-height: 100%
+                &__title
+                    +f28
+                    margin-bottom: 17px;
+                    display: block;
+                    color: #000000
+                &__description
+                    color: #717171
+                    font-weight: 300
+                    +f16
+                    margin-bottom: 34px
+                &__advantages
+                    margin-bottom: 40px
+                    ul
+                        li
+                            margin-bottom: 17px
+                            +f16
+                            font-weight: 300
+                            &:before
+                                content: ''
+                                width: 7px
+                                height: 7px
+                                border-radius: 50%
+                                background: $cRed
+                                display: inline-block
+                                margin-right: 15px
+        &-nav
+            margin-bottom: 51px
+            &-list
+                display: flex
+                justify-content: space-around
+                width: 100%
+                &-item
+                    +f23
+                    font-weight: 300
+                    text-decoration: none
+                    color: #ffffff
+                    position: relative
+                    padding: 22px 0
+                    transition: color .2s ease
+                    &:after
+                        content: ''
+                        width: 0%
+                        height: 4px
+                        background: transparent
+                        position: absolute
+                        left: 50%
+                        bottom: 0
+                        transition: all .4s ease
+                    &:hover
+                        color: #ec1958
+                    &.active
+                        color: #ffffff
+                        &:after
+                            width: 100%
+                            background: #EC1958
+                            left: 0
+                            bottom: 0
+
+.main-bundle
+    .main-bundle-list
+        padding-top: 110px
+    .row
+        .col-md-6
+            &:nth-child(odd)
+                .main-bundle-list-item
+                    margin-top: -110px
+.bundle-block
+    .main-bundle-list
+        margin-bottom: 0
+.product-card
+    &-key
+        opacity: 0.6
+        +f14
+        font-weight: 300
+        margin-bottom: 10px
+    &-title
+        +f54
+        max-width: 675px
+        margin-bottom: 36px
+        span
+            color: $cGreen
+    &-delivery
+        +f14
+        padding-left: 22px
+        font-weight: 300
+        display: inline-block
+        max-width: 200px
+    &-contols
+        display: flex
+        align-items: center
+        margin-bottom: 55px
+    .swiper-card
+        overflow: hidden
+        margin-left: -104px
+        margin-right: -104px
+        padding-left: 104px
+        position: relative
+        padding-bottom: 6px
+        margin-bottom: 40px
+        
+    .swiper-container-horizontal>.swiper-scrollbar
+        left: 0 !important
+        height: 3px;
+        width: calc(100% - 104px) !important
+        margin-left: 104px;
+        background: #f8f8f8
+    .swiper-scrollbar-drag
+        background: #D3D3D3 !important
+        border-radius: 8px !important
+
+
+    .swiper-wrapper
+        cursor: grab
+        &:active
+            cursor: grabbing
+    &-preview
+        &-list
+            width: 286px;
+        &-video, &-image
+            background: #F8F8F8
+        &-video
+            width: 494px
+            height: 683px
+            box-sizing: border-box;
+            display: flex
+            align-items: center
+            justify-content: center
+            
+            img
+                max-width: 100%
+                max-height: 100%
+            .video-block
+                overflow: hidden
+                height: 100%
+                width: 100%
+                position: relative
+                cursor: pointer
+                &:hover
+                    .play-button
+                        transform: translate(-50%, -50%) scale(1.1)  !important
+                video
+                    max-height: 100%
+                    position: absolute
+                    object-fit: contain;
+                    left: 50%
+                    transform: translateX(-50%)
+                .play-button
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    pointer-events: none;
+
+        &-image
+            height: 332px
+            display: block
+            max-height: 332px
+            width: 100%
+            flex: none
+            padding: 8px
+            box-sizing: border-box;
+            margin-bottom: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                max-width: 100%
+                max-height: 100%
+
+    &-description
+        &-bottom
+            display: flex
+            .tabs-list-body
+                width: 100%
+                max-width: 76%
+                flex-basis: 76%
+                padding-right: 8%
+            .product-card-description-numbers
+                width: 100%
+                max-width: 24%
+                flex-basis: 24%
+        &-title
+            +f28
+            margin-bottom: 18px
+        &-numbers
+            padding-top: 10px
+            &-item
+                margin-bottom: 65px
+                &__lead
+                    +f36
+                    color: $cGreen
+                    margin-bottom: 3px
+                &__desc
+                    +f14
+                    font-weight: 30
+    &-recommends
+        display: flex
+        align-items: center
+        padding-left: 56px
+        &__avatar
+            width: 59px
+            height: 59px
+            border-radius: 50%
+            overflow: hidden
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 2px
+            background: linear-gradient(27.52deg, #74BAE6 8.68%, #C0E2D8 31.54%, #E6CBD3 55.19%, #F4ABCB 58.99%, #D3D8ED 82.63%);
+            img
+                max-width: 100%
+                border-radius: 50%
+                max-height: 100%
+                border: 3px solid #fff
+        &__name
+            +f14
+            font-weight: 300
+            padding-left: 10px
+    &-inside
+        margin-bottom: 29px
+        &-title
+            +f28
+            margin-bottom: 25px
+        &-list
+            padding-left: 10px
+            padding-right: 1px
+            border-top: 1px solid #E5E5E5
+            .col-lg-4
+                border-bottom: 1px solid #E5E5E5
+            .main-product-list-item__image
+                margin-bottom: 10px;
+                min-height: 213px;
+            .main-product-list-item
+                padding: 5px 18px 20px
+                margin-bottom: 0
+            .main-product-list-item__subname
+                margin-bottom: 22px
+            .main-product-list-item-controls
+                margin-right: -10px
+            
+.lesson
+    &-card
+        &-video
+            height: 698px
+            .video-block
+                overflow: hidden
+                height: 100%
+                width: 100%
+                position: relative
+                cursor: pointer
+                &:hover
+                    .play-button
+                        transform: translate(-50%, -50%) scale(1.5)  !important
+                video
+                    max-height: 100%
+                    position: absolute
+                    object-fit: cover;
+                    left: 50%
+                    transform: translateX(-50%)
+                .play-button
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%) scale(1.7);
+                    pointer-events: none
+                    background: transparent
+                    border: 1px solid $cRed
+                    &:before
+                        border-color: transparent transparent transparent $cRed;
+            .fly-circle:after
+                right: 72%
+                bottom: -424px
+                width: 594px
+                height: 594px
+        &-content
+            background: #ffffff
+            color: #000000
+            padding: 41px 47px 30px 31px
+            margin-bottom: 20px
+            &-title
+                +f28
+                    

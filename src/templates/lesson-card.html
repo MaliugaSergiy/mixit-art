@@ -1,0 +1,77 @@
+---
+title: MIXIT Art
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+
+<main>
+  <div class="product-card">
+    <div class="page-block-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+              <div class="page-block-title__image">
+                  <img src="img/content/sonya.jpg" alt="">
+                </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <div class="h2 h2-outline h2-outline-sm">@sonya_miro</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="lesson-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5 col-xl-4 offset-md-1 offset-xl-2">
+            <div class="lesson-card-video">
+              <div class="video-block video-block-controls" id="video-block">
+                <video id="video-play" muted poster="img/content/lesson-video-dummy.jpg">
+                  <source src="video/demo-video.mp4" type="video/mp4"></source>
+                  <!-- <source src="/video/demo-video.mp4" type="video/ogg"></source> -->
+                  <p>"К сожалению, ваш браузер не поддерживает видео HTML5."</p>
+                </video>
+                <div id="video-controls">
+                  <span class="play-button"></span>
+                  <button type="button" id="mute-video"></button>
+                </div>  
+              </div>
+              <div class="fly-circle"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-5">
+              <div class="lesson-card-content content">
+                <h2>Описание урока</h2>
+                <p>На губах уже нанесён любимый карандаш, на глаза сначала наношу чёрный карандаш multiplay 09, растушёвываю кисточкой для нанесения теней из натурального ворса. Затем наношу оттенок galactic green из палетки COSMIC QUEEN, сглаживаю края теней кисточкой для растушёвки (также натуральный ворс), на внутренний уголок глаза наношу серебряный цвет stardust + белый сияющий milky way. Оттенком grey emotion подчеркиваю нижнее веко, затемняю внешнюю часть глаза чёрным drama black, для более глубокого взгляда наношу металлически графитовый карандаш multiplay 08. Ну и, конечно же, дополняю яркими ресницами от туши Vamp!⚡️♥️ В качестве хайлайтера использовала оттенок из палетки spice storm🌟✨.</p>
+              </div>
+              <div class="main-bundle-list-item main-bundle-list-item--green">
+                  <a href="#" class="main-bundle-list-item__image">
+                    <img src="img/products/bundle-item-dark.png" alt="">
+                  </a>
+                  <a href="#" class="main-bundle-list-item__title">Макияж без макияжа</a>
+                  <div class="main-bundle-list-item__description">Для идеальной кожи звездный визажист советует использовать крем-базу, подсвечивающую тональную основу и пудру для безупречного финиша.</div>
+                  <div class="main-bundle-list-item__advantages">
+                    <ul>
+                      <li>Выравнивающий тональный крем</li>
+                      <li>Тональный стик</li>
+                      <li>Удлиняющая тушь</li>
+                    </ul>
+                  </div>
+                  <div class="main-product-list-item-controls">
+                    <a href="#" class="btn btn-secondary btn--cart btn-lg"><span class="icon-cart"></span> 1200 руб</a>
+                    <a href="#" class="btn btn-secondary btn--like btn-lg"><span class="icon-like"></span></a>
+                  </div>
+                </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+		
+  </div>
+</main>
+
+{% endblock %}

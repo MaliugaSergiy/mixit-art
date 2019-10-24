@@ -1,0 +1,12 @@
+ProjectTitle: mixit-art
+
+PageList:
+- file: page.html
+  ready: 50
+- file: product-card.html
+  ready: 50
+- file: bundle-card.html
+  ready: 50
+- file: lesson-card.html
+  ready: 50
+

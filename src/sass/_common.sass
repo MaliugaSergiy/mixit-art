@@ -1,0 +1,467 @@
+html
+body
+	// +css-lock(16, 50, 600, 1000)
+	// line-height: 1.4
+	+stolzl
+	
+	color: #fff
+	background: #000
+
+	// height: 100vh
+	// min-height: 12864px
+	&.gradient
+		position: relative
+		background: linear-gradient(180deg,#a92b5e 0%,#294865 12.42%,#d65050 38.33%,#415e77 65.77%,#8055a4 88.56%,#96cdba 115.83%)
+		// overflow: hidden
+		.out
+			position: relative
+			overflow: hidden
+		.header-controls a
+			&:hover
+				color: #080605
+				.cart-counter
+					background: #EF0707
+					color: #fff !important
+
+		.header-back
+			span
+				color: #ffffff
+
+.header
+	min-height: 93px
+	padding: 19px 0
+	+r(1259)
+		padding: 15px 0
+	&-back
+		+f23
+		color: #ffffff
+		text-decoration: none
+		font-weight: 300
+		display: inline-flex
+		align-items: center
+		transition: color .2s ease
+		span
+			color: #EF0707
+			+f18
+			margin-right: 10px
+			transition: all .2s ease
+		&:hover
+			span
+				transform: translateX(-5px)
+	&-logotype
+		display: block
+		margin-left: 20px
+		img
+			max-width: 100%
+	&-controls
+		display: flex
+		> a
+			color: #ffffff
+			text-decoration: none
+			font-size: 34px
+			transition: color .2s ease
+			margin-left: 12px
+			&:hover
+				color: #EF0707
+		.header-icon-cart
+			position: relative
+			&:hover
+				.cart-counter
+					background: #fff
+					color: #ef0707 !important
+		.cart-counter
+			background: #EF0707
+			position: absolute
+			color: #ffffff !important
+			right: -5px
+			top: -1px
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 20px
+			height: 20px
+			overflow: hidden
+			min-width: 20px
+			max-width: 20px
+			font-size: 10px
+			line-height: 28px
+			transition: all .2s ease
+		
+main
+	padding: 23px 0
+	overflow: hidden
+
+.footer
+	margin-top: 28px
+	&-top
+		border-top: 1px solid rgba(255,255,255,0.3)
+		padding-top: 26px;
+		padding-bottom: 37px;
+		font-size: 12px;
+		line-height: 18px;
+		& > div
+			padding-left: 10px
+			padding-right: 10px
+		&-category
+			&-name
+				margin-bottom: 8px
+				display: block
+			&-list
+				display: flex
+				&-item
+					color: #ffffff
+					text-decoration: none
+
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					
+					border: 1px solid #fff
+					display: inline-flex
+					align-items: center
+					justify-content: center
+					margin-right: 6px
+					transition: all .1s ease
+					.icon-vk
+						font-size: 9px
+					&:hover
+						background: $cRed
+						border: 1px solid $cRed
+	&-author
+		border-top: 1px solid rgba(255,255,255,0.3)
+		text-align: center
+		padding: 35px 0 42px
+		a
+			display: inline-block
+			padding: 20px
+			font-size: 12px
+			line-height: 14px
+			text-decoration: none
+			color: #ffffff
+			span
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					bottom: -3px
+					left: 0
+					width: 0
+					height: 1px
+					background: rgba(255,255,255,0.4)
+					display: block
+					transition: width .3s ease
+			&:hover
+				span:after
+					width: 100%
+					
+
+
+
+.btn
+	max-width: 220px
+	display: block
+	height: 46px
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	text-decoration: none
+	border-radius: 100px
+	white-space: nowrap
+	+f14
+	font-weight: 300
+
+.btn-primary
+	background: $cGreen
+	border: 1px solid $cGreen
+	color: #ffffff
+	&:hover, &:active
+		background: #ffffff !important
+		color: #000 !important
+		border: 1px solid $cGreen !important
+.btn-secondary
+	border: 1px solid rgba(255,255,255,0.2)
+	background: transparent
+	&:hover, &:active
+		background: $cRed !important
+		color: #ffffff !important
+		border: 1px solid $cRed !important
+
+
+
+
+
+.btn--cart
+	padding-left: 19px
+	padding-right: 19px
+	+f18
+	font-weight: normal
+	margin-right: 11px
+	color: $cGreen
+	span
+		font-size: 20px
+		margin-right: 13px
+	border: 1px solid #BFE9E0
+	font-weight: normal
+	&:hover, &:active
+		background: $cGreen
+		color: #ffffff
+		border: 1px solid $cGreen
+	&.btn-lg
+		width: 100%
+		max-width: 187px
+		margin-right: 15px
+	&.btn-sm
+		margin-right: 14px;
+	&.btn-primary
+		color: #ffffff
+		border: 1px solid $cGreen
+		&:hover
+			background: transparent
+			color: $cGreen
+
+.btn--like
+	+f18
+	width: 46px
+	height: 46px
+	border: 1px solid $cRed
+	color: $cRed
+	&:hover, &:active
+		background: #AFE4D9
+		border: 1px solid #AFE4D9
+		color: #fff
+	&.btn-lg
+		width: 61px
+		height: 61px
+		padding: 12px
+	&.btn-sm
+		width: 58px
+		height: 58px
+		padding: 10px
+
+.btn-lg
+	padding: 1.85rem 3.5rem
+.btn-sm
+	padding: 1.75rem 2.2rem
+
+.fly-circle
+	position: relative
+	pointer-events: none
+	&:after
+		content: ''
+		position: absolute
+		right: -167px
+		bottom: -75px
+		background: url('../img/elements/circle-text.svg') center center / contain no-repeat
+		width: 357px
+		height: 357px
+		transform-origin: 50% 50%
+		transition: transform 3s linear
+		animation: 15s linear infinite rotation
+
+.simple-wrapper
+	padding: 52px 104px 38px
+	background: #FFFFFF;
+	border-radius: 5px;
+	color: #000000
+	margin-bottom: 37px
+
+.page-block-title
+	margin-bottom: 17px
+	&__image
+		border-radius: 50%
+		overflow: hidden
+		height: 134px
+		width: 134px
+		display: inline-block
+		margin-bottom: 15px
+		img
+			border-radius: 50%
+			max-width: 100%
+	
+
+
+
+
+
+
+
+// play buttons
+.play-button
+	width: 126px
+	height: 126px
+	border-radius: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+	background: $cRed
+	transition: transform .1s linear
+	&:before
+		content: ''
+		width: 0;
+		height: 44px
+		border-color: transparent transparent transparent #ffffff
+		border-style: solid;
+		border-width: 22px 0 22px 28px;
+		margin-right: -12px
+
+// .video
+.video-block
+	#mute-video
+		opacity: 0
+		pointer-events: none
+		width: 40px
+		height: 40px
+		display: inline-block
+		transition: all .7s ease
+		background-color: $cRed
+		border-radius: 50%
+		background-image: url('../img/elements/sound.svg')
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 25px
+		position: absolute
+		bottom: 20px
+		left: 50%
+		transform: translateX(-50%)
+		&.muted
+			background-image: url('../img/elements/sound-mute.svg')
+
+
+	.play-button
+		transition: all .7s ease
+		transition-delay: .1s
+		&:before
+			transition: .2s all ease;
+	&.active
+		.play-button
+			opacity: 0
+			transform: translate(-50%, -50%) scale(0.6)
+			&:before
+				border-style: double;
+				border-width: 0px 0 0px 35px;
+				margin-right: -2px;
+		#mute-video
+			opacity: 1
+			pointer-events: all
+
+.tabs-list-head
+	display: flex
+	justify-content: space-between
+	padding-right: 7%
+	margin-bottom: 25px
+	&__item
+		+f23
+		font-weight: 300
+		padding: 17px 0
+		display: inline-block
+		transition: color .2s ease
+		position: relative
+		cursor: pointer
+		&:after
+			content: ''
+			width: 0%
+			height: 4px
+			background: transparent
+			position: absolute
+			left: 50%
+			bottom: 0
+			transition: all .4s ease
+		&:hover
+			color: #ec1958
+		&.active
+			color: #000
+			&:after
+				width: 100%
+				background: #EC1958
+				left: 0
+				bottom: 0
+.tabs-list-body
+	&__item
+		display: none
+		+f16
+		font-weight: 300
+		&.active
+			display: block
+
+.main-product-nav-list
+
+
+.simple-wrapper .fly-circle:after
+    left: -380px
+    bottom: -90px
+
+.main-bundle-list-item__title
+	font-weight: 400 !important
+.fly-controls
+	display: none
+	position: fixed
+	bottom: 20px
+	justify-content: center
+	left: 0
+	width: 100%
+	padding: 10px
+	z-index: 11111
+	.btn--cart
+		font-size: 12px
+		max-width: 232px
+	.btn--like
+		background: #ED1958
+		color: #ffffff
+	+r(767)
+		display: flex
+
+.footer-top-category-payment-item
+	svg
+		width: auto
+		height: 35px
+
+.main-visagiste-girls-item-description, .footer-top-category-name, .footer-author a, .footer-top-copyright
+    font-weight: 300;
+.main-hero-bottom-last img
+	max-width: 100%
+
+
+.main-hero-head-makeup, .main-hero-head-fuck, .main-hero-head-standards, .main-hero-nav-list, .main-hero-bottom-first, .main-hero-bottom-middle
+	position: relative
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	will-change: transform
+
+.h2-outline
+	opacity: 0.7
+
+.main-visagiste-girls-item__photo
+	max-width: 95%
+
+.product-card-recommends
+    text-decoration: none;
+    color: #000;
+.main-visagiste-girls-item--last
+	margin-bottom: 50px
+
+.main-visagiste-girls-item__photo
+	position: relative
+
+.play-button-star, .play-button-circle
+	position: absolute
+	width: 457px
+	height: 457px
+	left: -22%;
+	bottom: 10%;
+	background-size: contain
+	background-position: center
+	background-repeat: no-repeat
+.play-button-star
+	background-image: url('../img/elements/play-girl-star.svg')
+	transform: scale(1.2);
+.play-button-circle
+	background-image: url('../img/elements/play-girl-circle.svg')
+	left: -9%;
+	bottom: -2%;
+.main-visagiste-girls-item--last .play-button-star
+	right: -7%;
+	bottom: -1%;
+	left: auto;
+
+

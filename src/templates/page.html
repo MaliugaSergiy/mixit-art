@@ -1,0 +1,585 @@
+---
+title: MIXIT Art
+gradient: true
+backButton: Назад в MIXIT
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+
+<main>
+  <div class="main-hero">
+    <div class="main-hero-head">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-9 offset-md-2">
+              <div class="h2 main-hero-head-fuck">f&nbsp;&nbsp;&nbsp;&nbsp;ck</div>
+          </div>
+          <div class="col-9 offset-2 offset-md-3">
+              <div class="h2 main-hero-head-makeup">make up</div>
+          </div>
+          <div class="col-12">
+              <div class="h2 h2-outline main-hero-head-standards">standards</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-hero-nav">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-5">
+            <div class="main-hero-nav-list">
+              <a href="#products" class="main-hero-nav-list-item">Продукция</a>
+              <a href="#lessons" class="main-hero-nav-list-item">Уроки</a>
+              <a href="#bundles" class="main-hero-nav-list-item">Сеты косметики</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-hero-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-1 col-md-2 col-4 offset-md-0">
+            <div class="main-hero-bottom-first">
+              <video loop id="video-play" autoplay playsinline muted preload="auto" poster="img/elements/hero-girl-1.jpg">
+                <source src="video/hero.mp4" type="video/mp4"></source>
+              </video>
+            </div>
+          </div>
+          <div class="col-10 offset-2 col-md-5 offset-md-7">
+            <div class="main-hero-bottom-middle">
+              <div class="row">
+                <div class="col-12 col-md-9 order-2 order-md-1">
+                  <div class="main-hero-bottom-middle__image">
+                    <img src="img/elements/hero-girl-2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-7 offset-5 col-md-8 offset-md-4 col-xl-9 offset-xl-3 order-1  order-md-2">
+                  <div class="main-hero-bottom-middle__text">Линейка MIXIT декоративной косметики – уникальный стиль на каждый день</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 offset-md-1">
+            <div class="main-hero-bottom-last">
+              <img src="img/elements/hero-girl-3.jpg" alt="">
+              <div class="fly-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-product" id='products'>
+    <div class="main-product-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="h2-outline">product</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-product-content">
+      <div class="main-product-nav">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <div class="main-product-nav-list">
+                <div class="main-product-nav-list-cancel"><span class="icon-arrow"></span></div>
+                <div class="main-product-nav-list-category">
+                    <a href="#" class="main-product-nav-list-category-item"><span>Глаза</span></a>
+                    <ul class="main-product-nav-list-category-droplist">
+                        <li><a href="">Все</a></li>
+                        <li><a href="">Карандаши</a></li>
+                        <li><a href="">Корректор</a></li>
+                      </ul>
+                </div>
+                <div class="main-product-nav-list-category">
+
+                    <a href="#" class="main-product-nav-list-category-item"><span>Брови</span></a>
+                    <ul class="main-product-nav-list-category-droplist">
+                        <li><a href="">Все</a></li>
+                        <li><a href="">Хайлайтер</a></li>
+                        <li><a href="">Карандаши</a></li>
+                        <li><a href="">Корректор</a></li>
+                      </ul>
+                </div>
+                
+                <div class="main-product-nav-list-category">
+                    <a href="#" class="main-product-nav-list-category-item"><span>Губы</span></a>
+                    <ul class="main-product-nav-list-category-droplist">
+                        <li><a href="">Все</a></li>
+                        <li><a href="">Помады</a></li>
+                        <li><a href="">Корректор</a></li>
+                      </ul>
+                </div>
+                
+                <div class="main-product-nav-list-category">
+                    <a href="#" class="main-product-nav-list-category-item"><span>Лицо</span></a>
+                    <ul class="main-product-nav-list-category-droplist">
+                        <li><a href="">Все</a></li>
+                        <li><a href="">Тональная основа</a></li>
+                        <li><a href="">Пудра</a></li>
+                        <li><a href="">Хайлайтер</a></li>
+                        <li><a href="">Корректор</a></li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-product-list">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item main-product-list-item--black">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-dark.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-alt.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item main-product-list-item--yellow">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-yellow.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item main-product-list-item--yellow">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-yellow.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-alt.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-alt.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item main-product-list-item--black">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-dark.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="main-product-list-item">
+                <a href="#" class="main-product-list-item__image">
+                  <img src="img/products/item-alt.png" alt="">
+                </a>
+                <div class="main-product-list-item__subname">Androgen CC-cream</div>
+                <a href="#" class="main-product-list-item__title">Карандаши для глаз</a>
+                <div class="main-product-list-item-controls">
+                  <a href="#" class="btn btn-secondary btn--cart"><span class="icon-cart"></span> 1200 руб</a>
+                  <a href="#" class="btn btn-secondary btn--like"><span class="icon-like"></span></a>
+                </div>
+              </div>
+            </div>
+
+		  </div>
+        </div>
+	  </div>
+	  <div class="main-product-more">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<a href="#" class="btn btn-secondary btn-lg">Показать еще</a>
+				</div>
+			</div>
+		</div>
+	  </div>
+    </div>
+  </div>
+  <div class="main-visagiste" id='lessons'>
+    <div class="main-visagiste-head">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="h2">visagiste</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-visagiste-stories">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="main-visagiste-stories-list">
+              <a href="lesson-card.html" class="main-visagiste-stories-list-item">
+                <div class="main-visagiste-stories-list-item__photo">
+                  <img src="img/content/elya_bulochka.png" alt="">
+                </div>
+                <div class="main-visagiste-stories-list-item__name">@elya_bulochka</div>
+              </a>
+              <a href="lesson-card.html" class="main-visagiste-stories-list-item">
+                <div class="main-visagiste-stories-list-item__photo">
+                  <img src="img/content/sonya_miro.png" alt="">
+                </div>
+                <div class="main-visagiste-stories-list-item__name">@sonya_miro</div>
+              </a>
+              <a href="lesson-card.html" class="main-visagiste-stories-list-item">
+                <div class="main-visagiste-stories-list-item__photo">
+                  <img src="img/content/stories-image3.png" alt="">
+                </div>
+                <div class="main-visagiste-stories-list-item__name">@sonya_miro</div>
+              </a>
+              <a href="lesson-card.html" class="main-visagiste-stories-list-item">
+                <div class="main-visagiste-stories-list-item__photo">
+                  <img src="img/content/sonya_miro.png" alt="">
+                </div>
+                <div class="main-visagiste-stories-list-item__name">@sonya_miro</div>
+              </a>
+              <a href="lesson-card.html" class="main-visagiste-stories-list-item">
+                <div class="main-visagiste-stories-list-item__photo">
+                  <img src="img/content/stories-image3.png" alt="">
+                </div>
+                <div class="main-visagiste-stories-list-item__name">@sonya_miro</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-visagiste-girls">
+      <div class="container">
+        <div class="main-visagiste-girls-item">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <a href="lesson-card.html" class="main-visagiste-girls-item__photo">
+                <img src="img/content/visagiste-girls-1.jpg" alt="">
+                <div class="play-button-star"></div>
+              </a>
+            </div>
+            <div class="col-12 col-md-5 offset-md-1">
+              <a href="lesson-card.html" class="main-visagiste-girls-item-content">
+                <div class="main-visagiste-girls-item-avatar">
+                  <img src="img/content/stories-image3.png" alt="">
+                </div>
+                <div class="main-visagiste-girls-item-name">@sonya_miro</div>
+                <div class="main-visagiste-girls-item-description">Если, как и я, любите, чтобы было поярче, сохраняйте! Для макияжа я использовала продукты mixit</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-visagiste-girls-item main-visagiste-girls-item--rightWide">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 col-lg-5 offset-lg-1 order-2 order-md-1">
+              <a href="lesson-card.html" class="main-visagiste-girls-item-content">
+                <div class="main-visagiste-girls-item-avatar">
+                  <img src="img/content/sonya_miro.png" alt="">
+                </div>
+                <div class="main-visagiste-girls-item-name">@natalinamua</div>
+                <div class="main-visagiste-girls-item-description">Если, как и я, любите, чтобы было поярче, сохраняйте! Для макияжа я использовала продукты mixit</div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2">
+                <a href="lesson-card.html" class="main-visagiste-girls-item__photo">
+                  <img src="img/content/visagiste-girls-2.jpg" alt="">
+                  <div class="play-button-circle"></div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="main-visagiste-girls-item">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <a href="lesson-card.html" class="main-visagiste-girls-item__photo">
+                <!-- <img src="img/content/lesson-video-dummy.jpg" alt=""> -->
+                <video id="video-play" muted autoplay loop poster="img/content/lesson-video-dummy.jpg">
+                  <source src="video/demo-video.mp4" type="video/mp4"></source>
+                  <p>"К сожалению, ваш браузер не поддерживает видео HTML5."</p>
+                </video>
+                <div class="play-button-circle"></div>
+              </a>
+            </div>
+            <div class="col-12 col-md-5 offset-md-1">
+              <a href="lesson-card.html" class="main-visagiste-girls-item-content">
+                <div class="main-visagiste-girls-item-avatar">
+                  <img src="img/content/stories-image3.png" alt="">
+                </div>
+                <div class="main-visagiste-girls-item-name">@sonya_miro</div>
+                <div class="main-visagiste-girls-item-description">Если, как и я, любите, чтобы было поярче, сохраняйте! Для макияжа я использовала продукты mixit</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-visagiste-girls-item main-visagiste-girls-item--last">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 col-lg-5 offset-lg-1 order-2 order-md-1">
+              <a href="lesson-card.html" class="main-visagiste-girls-item-content">
+                <div class="main-visagiste-girls-item-avatar">
+                  <img src="img/content/sonya_miro.png" alt="">
+                </div>
+                <div class="main-visagiste-girls-item-name">@natalinamua</div>
+                <div class="main-visagiste-girls-item-description">Если, как и я, любите, чтобы было поярче, сохраняйте! Для макияжа я использовала продукты mixit</div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2">
+                <a href="lesson-card.html" class="main-visagiste-girls-item__photo">
+                  <img src="img/content/visagiste-girls-4.jpg" alt="">
+                  <div class="play-button-star"></div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <a href="#" class="btn btn-secondary btn-lg">Показать еще</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-bundle" id='bundles'>
+	<div class="main-bundle-title">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="h2 h2-multiple">bundle <div class="h2-outline">box</div></div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-bundle-content">
+		<div class="main-bundle-nav">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-6">
+						<div class="main-bundle-nav-list">
+							<a href="#" class="main-bundle-nav-list-item">Популярное</a>                       
+							<a href="#" class="main-bundle-nav-list-item active">Базовый</a>
+							<a href="#" class="main-bundle-nav-list-item">Яркий</a>
+							<a href="#" class="main-bundle-nav-list-item">Легкий</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-bundle-list">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-10 offset-lg-1">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<div class="main-bundle-list-item">
+									<a href="#" class="main-bundle-list-item__image">
+										<img src="img/products/bundle-item.png" alt="">
+									</a>
+									<a href="#" class="main-bundle-list-item__title">Макияж без макияжа</a>
+									<div class="main-bundle-list-item__description">Для идеальной кожи звездный визажист советует использовать крем-базу, подсвечивающую тональную основу и пудру для безупречного финиша.</div>
+									<div class="main-bundle-list-item__advantages">
+										<ul>
+											<li>Выравнивающий тональный крем</li>
+											<li>Тональный стик</li>
+											<li>Удлиняющая тушь</li>
+										</ul>
+									</div>
+									<div class="main-product-list-item-controls">
+										<a href="#" class="btn btn-secondary btn--cart btn-lg"><span class="icon-cart"></span> 1200 руб</a>
+										<a href="#" class="btn btn-secondary btn--like btn-lg"><span class="icon-like"></span></a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-12 col-md-6">
+								<div class="main-bundle-list-item main-bundle-list-item--black">
+									<a href="#" class="main-bundle-list-item__image">
+										<img src="img/products/bundle-item-dark.png" alt="">
+									</a>
+									<a href="#" class="main-bundle-list-item__title">Макияж без макияжа</a>
+									<div class="main-bundle-list-item__description">Для идеальной кожи звездный визажист советует использовать крем-базу, подсвечивающую тональную основу и пудру для безупречного финиша.</div>
+									<div class="main-bundle-list-item__advantages">
+										<ul>
+											<li>Выравнивающий тональный крем</li>
+											<li>Тональный стик</li>
+											<li>Удлиняющая тушь</li>
+										</ul>
+									</div>
+									<div class="main-product-list-item-controls">
+										<a href="#" class="btn btn-secondary btn--cart btn-lg"><span class="icon-cart"></span> 1200 руб</a>
+										<a href="#" class="btn btn-secondary btn--like btn-lg"><span class="icon-like"></span></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="main-bundle-list-item main-bundle-list-item--green">
+									<a href="#" class="main-bundle-list-item__image">
+										<img src="img/products/bundle-item-dark.png" alt="">
+									</a>
+									<a href="#" class="main-bundle-list-item__title">Макияж без макияжа</a>
+									<div class="main-bundle-list-item__description">Для идеальной кожи звездный визажист советует использовать крем-базу, подсвечивающую тональную основу и пудру для безупречного финиша.</div>
+									<div class="main-bundle-list-item__advantages">
+										<ul>
+											<li>Выравнивающий тональный крем</li>
+											<li>Тональный стик</li>
+											<li>Удлиняющая тушь</li>
+										</ul>
+									</div>
+									<div class="main-product-list-item-controls">
+										<a href="#" class="btn btn-secondary btn--cart btn-lg"><span class="icon-cart"></span> 1200 руб</a>
+										<a href="#" class="btn btn-secondary btn--like btn-lg"><span class="icon-like"></span></a>
+									</div>
+									<div class="main-bundle-list-item-element"></div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="main-bundle-list-item">
+									<a href="#" class="main-bundle-list-item__image">
+										<img src="img/products/bundle-item.png" alt="">
+									</a>
+									<a href="#" class="main-bundle-list-item__title">Макияж без макияжа</a>
+									<div class="main-bundle-list-item__description">Для идеальной кожи звездный визажист советует использовать крем-базу, подсвечивающую тональную основу и пудру для безупречного финиша.</div>
+									<div class="main-bundle-list-item__advantages">
+										<ul>
+											<li>Выравнивающий тональный крем</li>
+											<li>Тональный стик</li>
+											<li>Удлиняющая тушь</li>
+										</ul>
+									</div>
+									<div class="main-product-list-item-controls">
+										<a href="#" class="btn btn-secondary btn--cart btn-lg"><span class="icon-cart"></span> 1200 руб</a>
+										<a href="#" class="btn btn-secondary btn--like btn-lg"><span class="icon-like"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+				<div class="fly-circle"></div>
+		</div>
+		<div class="main-product-more">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex justify-content-center">
+						<a href="#" class="btn btn-secondary btn-lg">Перейти в магазин MIXIT</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  </div>
+</main>
+
+{% endblock %}
